@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mahaja Burger n' Tea - Makassar</title>
+  <meta name="description" content="Es teh dingin dan burger hangat mulai Rp3.000. Mahaja Burger n' Tea, Makassar.">
+  <link rel="icon" href="img/logo.webp">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Lilita+One&family=Nunito:wght@400;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <section class="sampul" id="sampul">
+    <div class="bendera"></div>
+
+    <div class="isi-sampul">
+      <img class="logo-besar" id="logo-besar" src="img/logo.webp" alt="Logo Mahaja Burger n' Tea">
+
+      <span class="stiker">100% Halal</span>
+      <h1>Haus? Lapar?<br><span>Mampir dulu.</span></h1>
+      <p class="tulis">es teh dingin &amp; burger hangat, mulai Rp3.000</p>
+
+      <a class="tombol" href="#menu">Lihat menu</a>
+      <a class="tombol putih" id="wa-sampul" href="#" target="_blank" rel="noopener">Chat WhatsApp</a>
+    </div>
+
+    <div class="hias kiri"><img src="img/promo-teh.jpg" alt="Es teh Mahaja"></div>
+    <div class="hias kanan"><img src="img/paket-spesial.jpg" alt="Burger, es teh, dan kentang goreng"></div>
+
+    <a class="turun" href="#promo">geser ke bawah &darr;</a>
+  </section>
+
+  <header class="navbar">
+    <div class="container">
+      <a href="#sampul" class="logo">
+        <img src="img/logo.webp" alt="Logo Mahaja">
+        Mahaja
+      </a>
+
+      <button id="tombol-menu" aria-label="Buka menu">&#9776;</button>
+
+      <nav class="menu-nav" id="menu-nav">
+        <a href="#promo">Promo</a>
+        <a href="#menu">Menu</a>
+        <a href="#lokasi">Lokasi</a>
+      </nav>
+    </div>
+  </header>
+
+  <section id="promo">
+    <div class="container">
+      <h2>Lagi ada promo nih</h2>
+      <p class="tulis judul-bawah">sayang kalau dilewatin</p>
+
+      <div class="promo-box">
+        <div class="kupon">
+          <span class="label">Tiap hari</span>
+          <img src="img/promo-teh.jpg" alt="Es teh Mahaja, beli 2 gratis 1">
+          <h3>Beli 2 Gratis 1</h3>
+          <p>Khusus Es Teh Ori Jumbo. Berlaku di semua outlet.</p>
+        </div>
+
+        <div class="kupon">
+          <span class="label">Hari Jumat</span>
+          <img src="img/jumat-berkah.jpg" alt="Poster promo Jumat Berkah di kios">
+          <h3>Jumat Berkah<br>Beli 2 Dapat 1</h3>
+          <p>Untuk pembelian langsung di kios (offline).</p>
+        </div>
+
+        <div class="kupon">
+          <span class="label">Selalu gratis</span>
+          <img src="img/topping.jpg" alt="Topping boba, keju, dan cincau">
+          <h3>Topping Boba, Keju, Cincau</h3>
+          <p>Tinggal pilih mau yang mana, nggak nambah bayar.</p>
+        </div>
+
+        <div class="kupon">
+          <span class="label">Berlaku selamanya</span>
+          <img src="img/loyalty-card.jpg" alt="Loyalty Card Mahaja">
+          <h3>Loyalty Card</h3>
+          <p>Tiap belanja 30K dapat 1 stamp. Kumpulkan 10 stamp, tukar 1 Paket Spesial atau Istimewa.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="menu">
+    <div class="container">
+      <h2>Mau pesan apa?</h2>
+      <p class="tulis judul-bawah">harga dalam ribu rupiah (K)</p>
+
+      <div class="tab-box">
+        <button class="tab aktif" data-pilih="semua">Semua</button>
+        <button class="tab" data-pilih="minuman">Minuman</button>
+        <button class="tab" data-pilih="burger">Burger &amp; Camilan</button>
+        <button class="tab" data-pilih="paket">Paket Hemat</button>
+      </div>
+
+      <div class="grup" data-grup="minuman">
+        <div class="grup-judul"><h3>Minuman</h3></div>
+        <div class="daftar" id="daftar-minuman"></div>
+        <p class="tulis catatan">* gratis topping boba, keju, atau cincau</p>
+      </div>
+
+      <div class="grup" data-grup="burger">
+        <div class="grup-judul"><h3>Burger &amp; Camilan</h3></div>
+        <div class="daftar" id="daftar-burger"></div>
+        <p class="tulis catatan">* tambah keju slice di burger +2K</p>
+      </div>
+
+      <div class="grup" data-grup="paket">
+        <div class="grup-judul"><h3>Paket Hemat</h3></div>
+        <div class="daftar besar" id="daftar-paket"></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="lokasi">
+    <div class="container">
+      <h2>Mampir ke sini</h2>
+      <p class="tulis judul-bawah" style="color: #ffe9a8">cari yang di depan masjid ya!</p>
+
+      <div class="lokasi-box">
+        <div>
+          <h3>Alamat</h3>
+          <p>Jl. Dg. Tata 3 (pelataran kios depan masjid), Kel. Parang Tambung, Kec. Tamalate, Kota Makassar</p>
+          <h3>Jam buka</h3>
+          <p>Senin - Minggu, 10.00 - 22.00 WITA</p>
+
+          <h3>Pesan antar</h3>
+          <p>GoFood, GrabFood, ShopeeFood. Cari "Mahaja Dg. Tata 3".</p>
+        </div>
+
+        <div>
+          <h3>Kontak</h3>
+          <p>WhatsApp: 0821 4444 6544</p>
+          <p>Instagram &amp; TikTok: @mahaja.id</p>
+          <a class="tombol" id="wa-kontak" href="#" target="_blank" rel="noopener">Chat WhatsApp</a>
+          <br>
+          <a class="maps" target="_blank" rel="noopener"
+            href="https://www.google.com/maps/search/?api=1&query=Jl.+Dg.+Tata+3+Parang+Tambung+Makassar">
+            Buka di Google Maps
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    &copy; <span id="tahun"></span> Mahaja Burger n' Tea &middot; Makassar
+  </footer>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
