@@ -13,7 +13,7 @@ const menu = [
   { grup: "minuman", nama: "Es Thaitea", harga: "Jumbo 10K<br>Reguler 5K", gambar: "es-thaitea.jpg" },
   { grup: "minuman", nama: "Es Taro", harga: "10K", gambar: "es-taro.jpg" },
   { grup: "minuman", nama: "Es Lemontea", harga: "10K", gambar: "es-lemontea.jpg" },
-  { grup: "minuman", nama: "Es Leci Tea", harga: "8K", gambar: "es-leci.jpg" },
+  
   { grup: "minuman", nama: "Es Milo", harga: "10K", gambar: "es-milo.jpg" },
 
   { grup: "minuman", nama: "Es Red Velvet", harga: "10K", gambar: "es-red-velvet.jpg" },
@@ -28,7 +28,7 @@ const menu = [
   { grup: "burger", nama: "Kentang Goreng", harga: "12K", gambar: "kentang-goreng.jpg" },
   { grup: "burger", nama: "Sosis Bakar", harga: "12K", gambar: "sosis-bakar.jpg" },
 
-  
+
   { grup: "paket", nama: "Paket Spesial", isi: "Burger, es teh, dan kentang goreng.",
     harga: "Rp22.000 <s>28K</s>", gambar: "paket-spesial.jpg" },
   { grup: "paket", nama: "Paket Istimewa", isi: "Nasi ayam dan es teh. Pilih saus: Original, Teriyaki, atau Hot Lava.",
